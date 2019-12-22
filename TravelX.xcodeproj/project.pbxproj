@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02D34B9023AF51C500A3754E /* SqliteHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D34B8F23AF51C500A3754E /* SqliteHelper.swift */; };
 		02EBC9CC23AE09040039B1D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EBC9CB23AE09040039B1D1 /* AppDelegate.swift */; };
 		02EBC9CE23AE09040039B1D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EBC9CD23AE09040039B1D1 /* SceneDelegate.swift */; };
 		02EBC9D023AE09040039B1D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EBC9CF23AE09040039B1D1 /* ViewController.swift */; };
@@ -14,6 +15,8 @@
 		02EBC9D523AE09080039B1D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02EBC9D423AE09080039B1D1 /* Assets.xcassets */; };
 		02EBC9D823AE09080039B1D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02EBC9D623AE09080039B1D1 /* LaunchScreen.storyboard */; };
 		02EBC9E323AE09080039B1D1 /* TravelXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EBC9E223AE09080039B1D1 /* TravelXTests.swift */; };
+		02EBC9EE23AE0CE40039B1D1 /* PhotosManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EBC9ED23AE0CE40039B1D1 /* PhotosManager.swift */; };
+		02EBC9F323AE15E60039B1D1 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EBC9F223AE15E60039B1D1 /* Photo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02D34B8F23AF51C500A3754E /* SqliteHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SqliteHelper.swift; sourceTree = "<group>"; };
 		02EBC9C823AE09040039B1D1 /* TravelX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02EBC9CB23AE09040039B1D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02EBC9CD23AE09040039B1D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +42,8 @@
 		02EBC9DE23AE09080039B1D1 /* TravelXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02EBC9E223AE09080039B1D1 /* TravelXTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelXTests.swift; sourceTree = "<group>"; };
 		02EBC9E423AE09080039B1D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02EBC9ED23AE0CE40039B1D1 /* PhotosManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosManager.swift; sourceTree = "<group>"; };
+		02EBC9F223AE15E60039B1D1 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,7 @@
 		02EBC9CA23AE09040039B1D1 /* TravelX */ = {
 			isa = PBXGroup;
 			children = (
+				02EBC9EF23AE15800039B1D1 /* Utils */,
 				02EBC9CB23AE09040039B1D1 /* AppDelegate.swift */,
 				02EBC9CD23AE09040039B1D1 /* SceneDelegate.swift */,
 				02EBC9CF23AE09040039B1D1 /* ViewController.swift */,
@@ -86,6 +93,7 @@
 				02EBC9D423AE09080039B1D1 /* Assets.xcassets */,
 				02EBC9D623AE09080039B1D1 /* LaunchScreen.storyboard */,
 				02EBC9D923AE09080039B1D1 /* Info.plist */,
+				02EBC9ED23AE0CE40039B1D1 /* PhotosManager.swift */,
 			);
 			path = TravelX;
 			sourceTree = "<group>";
@@ -97,6 +105,15 @@
 				02EBC9E423AE09080039B1D1 /* Info.plist */,
 			);
 			path = TravelXTests;
+			sourceTree = "<group>";
+		};
+		02EBC9EF23AE15800039B1D1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				02EBC9F223AE15E60039B1D1 /* Photo.swift */,
+				02D34B8F23AF51C500A3754E /* SqliteHelper.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,7 +219,10 @@
 			files = (
 				02EBC9D023AE09040039B1D1 /* ViewController.swift in Sources */,
 				02EBC9CC23AE09040039B1D1 /* AppDelegate.swift in Sources */,
+				02EBC9EE23AE0CE40039B1D1 /* PhotosManager.swift in Sources */,
+				02D34B9023AF51C500A3754E /* SqliteHelper.swift in Sources */,
 				02EBC9CE23AE09040039B1D1 /* SceneDelegate.swift in Sources */,
+				02EBC9F323AE15E60039B1D1 /* Photo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
